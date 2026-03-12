@@ -59,7 +59,7 @@ Coding agents like [Copilot CLI](https://github.com/features/copilot/cli) and [G
 
 | Resource | Description |
 |----------|-------------|
-| **[127 Skills](#skill-catalog)** | Domain-specific knowledge for Azure SDK and Foundry development |
+| **[128 Skills](#skill-catalog)** | Domain-specific knowledge for Azure SDK and Foundry development |
 | **[Plugins](#plugins)** | Installable plugin packages (deep-wiki, azure-skills and more) |
 | **[Custom Agents](#agents)** | Role-specific agents (backend, frontend, infrastructure, planner) |
 | **[AGENTS.md](AGENTS.md)** | Template for configuring agent behavior in your projects |
@@ -74,7 +74,7 @@ Coding agents like [Copilot CLI](https://github.com/features/copilot/cli) and [G
 
 | Language | Count | Suffix | 
 |----------|-------|--------|
-| [Core](#core) | 8 | — |
+| [Core](#core) | 9 | — |
 | [Python](#python) | 41 | `-py` |
 | [.NET](#net) | 28 | `-dotnet` |
 | [TypeScript](#typescript) | 25 | `-ts` |
@@ -85,12 +85,13 @@ Coding agents like [Copilot CLI](https://github.com/features/copilot/cli) and [G
 
 ### Core
 
-> 8 skills — tooling, infrastructure, language-agnostic
+> 9 skills — tooling, infrastructure, language-agnostic
 
 | Skill | Description |
 |-------|-------------|
 | [cloud-solution-architect](.github/skills/cloud-solution-architect/) | Design well-architected Azure cloud systems. Architecture styles, 44 design patterns, technology choices, mission-critical design, WAF pillars. |
 | [copilot-sdk](.github/skills/copilot-sdk/) | Build applications powered by GitHub Copilot using the Copilot SDK. Session management, custom tools, streaming, hooks, MCP servers, BYOK, deployment patterns. |
+| [entra-agent-id](.github/skills/entra-agent-id/) | Microsoft Entra Agent ID (preview) — create OAuth2-capable AI agent identities via Microsoft Graph beta API. Blueprints, BlueprintPrincipals, permissions, WIF. |
 | [frontend-design-review](.github/skills/frontend-design-review/) | Review and create distinctive frontend interfaces. Design system compliance, quality pillars, accessibility, and creative aesthetics. |
 | [github-issue-creator](.github/skills/github-issue-creator/) | Convert raw notes, error logs, or screenshots into structured GitHub issues. |
 | [mcp-builder](.github/skills/mcp-builder/) | Build MCP servers for LLM tool integration. Python (FastMCP), Node/TypeScript, or C#/.NET. |
@@ -630,11 +631,11 @@ pnpm test
 
 ### Test Coverage Summary
 
-**127 skills with 1148 test scenarios** — all skills have acceptance criteria and test scenarios.
+**128 skills with 1158 test scenarios** — all skills have acceptance criteria and test scenarios.
 
 | Language | Skills | Scenarios | Top Skills by Scenarios |
 |----------|--------|-----------|-------------------------|
-| Core | 6 | 62 | `copilot-sdk` (11), `podcast-generation` (8), `skill-creator` (8) |
+| Core | 7 | 72 | `copilot-sdk` (11), `podcast-generation` (8), `skill-creator` (8) |
 | Python | 41 | 331 | `azure-ai-projects-py` (12), `pydantic-models-py` (12), `azure-ai-translation-text-py` (11) |
 | .NET | 29 | 290 | `azure-resource-manager-sql-dotnet` (14), `azure-resource-manager-redis-dotnet` (14), `azure-servicebus-dotnet` (13) |
 | TypeScript | 25 | 270 | `azure-storage-blob-ts` (17), `azure-servicebus-ts` (14), `aspire-ts` (13) |
